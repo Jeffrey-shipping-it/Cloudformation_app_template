@@ -1,6 +1,6 @@
 aws cloudformation create-stack \
-		--stack-name myserverstack \
-		 --template-body file://servers.yml \
-		  --parameters file://server-parameters.json \
-		   --capabilities "CAPABILITY_IAM" "CAPABILITY_NAMED_IAM" \
-		   --region=us-west-2
+		--stack-name $1 \
+		--template-body file://$2  \
+		--parameters file://$3 \
+	 --capabilities "CAPABILITY_IAM" "CAPABILITY_NAMED_IAM" \
+	 --region=us-west-2
