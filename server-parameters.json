@@ -1,0 +1,14 @@
+[
+	{
+		"ParameterKey": "EnvironmentName",
+		"ParameterValue": "CloudFormationProject"
+	},
+		{
+		"ParameterKey": "AMI",
+		"ParameterValue": "ami-090717c950a5c34d3"
+	},
+		{
+		"ParameterKey": "Instancetype",
+		"ParameterValue": "t2.medium"
+	}
+]
