@@ -169,6 +169,6 @@ Outputs:
 
     LBURL:
         Description: A reference to the created LB endpoint
-        Value: !GetAtt WebAppLB.DNSName
+        Value: !Sub http://${WebAppLB.DNSName}
         Export:
           Name: !Sub ${EnvironmentName}-ELBURL
